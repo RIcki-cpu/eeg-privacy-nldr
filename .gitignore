@@ -5,3 +5,5 @@ __pycache__/
 *.npy
 .DS_Store
 *.ipynb_checkpoints/
+.venv/
+.claude/settings.json

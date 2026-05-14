@@ -12,7 +12,7 @@ MAT_DIR    = os.path.join(_BASE, 'data')     # folder with .mat files
 OUTPUT_DIR = os.path.join(_BASE, 'outputs')  # where figures + features go
 
 # ─── DATA LOADING ─────────────────────────────────────────────────────────────
-SAMPLING_RATE  = 250       # Hz
+SAMPLING_RATE  = 100       # Hz — confirmed from spectral analysis (alpha peak at bin 9-10)
 MAT_SPLIT      = 'train'   # 'train' | 'test' | 'all'
 MAT_DATA_KEY   = 'dataset' # key inside data .mat files
 MAT_LABELS_KEY = 'labels'  # key inside label .mat files  (NOT 'classlabel')
