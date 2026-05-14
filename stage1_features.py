@@ -150,7 +150,7 @@ BANDS_FE   = {'delta': (0.5, 4), 'theta': (4, 8), 'alpha': (8, 13),
               'beta': (13, 30),  'gamma': (30, 50)}
 FEAT_NAMES = ['delta_%', 'theta_%', 'alpha_%', 'beta_%', 'gamma_%',
               'centroid_hz', 'entropy_bits', 'bandwidth_95hz', 'rolloff_85hz']
-_trapz     = getattr(np, 'trapezoid', getattr(np, 'trapz'))
+_trapz     = getattr(np, 'trapezoid', None) or getattr(np, 'trapz')
 
 def spectral_features(sig, sr):
     """
